@@ -1,0 +1,18 @@
+#!/bin/sh
+
+export PATH=/bin:/sbin:/usr/bin:/usr/sbin
+
+mount -n -t devtmpfs devtmpfs /dev
+mount -n -t proc     proc     /proc
+mount -n -t sysfs    sysfs    /sys
+mount -n -t tmpfs    tmpfs    /run
+
+mount /dev/mmcblk0p2 /root
+
+echo 0 >/proc/sys/kernel/printk
+clear
+
+cd /root
+exec switch_root . "/sbin/init"
+
+#setsid cttyhack sh
