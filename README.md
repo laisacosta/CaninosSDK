@@ -13,8 +13,11 @@ Environment setup (Debian): sudo apt-get install zlib1g-dev libncurses5-dev pkg-
 # Firmware Creation
 
 1) Go to the folder "owl"
-2) Type ./configure.sh and choose "debian" and "coreV2"
-3) The generated .fw image will be located at the folder "images" at "owl/out/labrador_debian_coreV2"
+2) Type ./config.sh and choose "debian" and "coreV2"
+3) Type make all
+4) The generated .fw image will be located at the folder "images" at "owl/out/labrador_debian_coreV2"
 
+# Notes
 
+It is expected that you have the `parted` program installed at location `/sbin/parted`.
 
