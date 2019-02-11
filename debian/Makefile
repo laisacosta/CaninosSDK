@@ -27,6 +27,7 @@ rootfs:
 	$(Q)sudo mkdir $(PATCH_DIR)
 	$(Q)sudo cp -r $(SYS_DIR)/boards/common/rootfs/* $(PATCH_DIR)
 	
+	$(Q)sudo chown -R root:root $(PATCH_DIR)
 	$(Q)sudo cp -rf $(PATCH_DIR)/etc/* $(ROOTFS_DIR)/etc
 	$(Q)sudo cp -rf $(PATCH_DIR)/lib/* $(ROOTFS_DIR)/lib
 	#$(Q)sudo cp -rf $(PATCH_DIR)/usr/* $(ROOTFS_DIR)/usr

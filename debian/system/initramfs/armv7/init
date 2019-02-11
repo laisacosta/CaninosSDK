@@ -2,6 +2,10 @@
 
 export PATH=/bin:/sbin:/usr/bin:/usr/sbin
 
+mkdir /proc
+mkdir /sys
+mkdir /run
+
 mount -n -t devtmpfs devtmpfs /dev
 mount -n -t proc     proc     /proc
 mount -n -t sysfs    sysfs    /sys

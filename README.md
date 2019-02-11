@@ -6,7 +6,7 @@ The u-boot source code is located at the folder "u-boot".
 The armhf crosscompiler is located at the folder "toolchain".
 The rootfs debian image is located at the directory "debian/system".
 
-**Note** Before compiling, please download the Debian Buster rootfs image from "https://github.com/caninos-loucos/Debian.git" and paste it in the folder "debian/system".
+**Note** Before compiling, please download the Debian Buster rootfs image from "https://drive.google.com/open?id=1_O0hslsOzg2VRDqWIwkAxWR7VLPaAQ1m" and paste it in the folder "debian/system".
 
 Environment setup (Debian): sudo apt-get install zlib1g-dev libncurses5-dev pkg-config bison flex libssl-dev git make build-essential gparted
 
