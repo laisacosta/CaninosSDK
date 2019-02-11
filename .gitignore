@@ -1,1 +1,4 @@
 debian/system/debian-buster.tar.bz2
+owl/out
+
+*.ko
